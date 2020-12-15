@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <TextView
+            android:id="@+id/tea_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Tea name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_middle"
+            app:layout_constraintBottom_toTopOf="@id/intensity"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+        <TextView
+            android:id="@+id/intensity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Intensity"
+            app:layout_constraintTop_toBottomOf="@id/tea_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_middle"
+            app:layout_constraintBottom_toTopOf="@id/brew_intensity_slider"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="3:20s"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guideline_middle"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="70°C"
+            android:textAlignment="textEnd"
+            app:layout_constraintTop_toBottomOf="@id/duration"
+            app:layout_constraintStart_toEndOf="@id/guideline_middle"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/brew_intensity_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:valueFrom="0.0"
+            android:valueTo="2.0"
+            android:stepSize="1.0"
+            app:layout_constraintTop_toBottomOf="@id/intensity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline_middle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

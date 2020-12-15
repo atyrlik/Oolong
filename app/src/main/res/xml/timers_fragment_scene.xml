@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/no_timers_running">
+        <Constraint
+            android:id="@+id/tea_recipes_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/running_timers_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/guideline_middle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/timers_running">
+    </ConstraintSet>
+
+    <Transition
+        app:constraintSetStart="@id/no_timers_running"
+        app:constraintSetEnd="@id/timers_running"
+        app:motionInterpolator="easeOut" />
+
+    <Transition
+        app:constraintSetStart="@id/timers_running"
+        app:constraintSetEnd="@id/no_timers_running"
+        app:motionInterpolator="easeOut" />
+</MotionScene>

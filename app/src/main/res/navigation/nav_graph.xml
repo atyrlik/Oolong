@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/timersFragment">
+
+    <fragment
+        android:id="@+id/timersFragment"
+        android:name="me.geckotravel.oolong.timersscreen.view.TimersFragment"
+        android:label="@string/fragment_timers_title"
+        tools:layout="@layout/timers_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="me.geckotravel.oolong.settingsscreen.view.SettingsFragment"
+        android:label="@string/fragment_settings_title"
+        tools:layout="@layout/settings_fragment" />
+</navigation>

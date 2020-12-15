@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Oolong</string>
+    <string name="tea_intensity_light">Léger</string>
+    <string name="tea_intensity_medium">Moyen</string>
+    <string name="tea_intensity_strong">Intense</string>
+    <string name="preference_category_display">Affichage</string>
+    <string name="preference_category_ringtone">Notifications</string>
+    <string name="preference_temperature_unit">Echelle de temperature</string>
+    <string name="preference_is_ringtone_enabled">Activer l\'alarme lorsqu\'un thé est prêt</string>
+    <string name="preference_ringtone">Personaliser l\'alarme</string>
+    <string name="fragment_timers_title">Mes infusions</string>
+    <string name="fragment_settings_title">Paramètres</string>
+    <string name="action_dismiss">Annuler</string>
+    <string name="notification_channel_running_timers">Temps restant</string>
+    <string name="notification_channel_timer_done">Infusion prête</string>
+    <string name="notification_running_timer_title">Votre %s infuse</string>
+    <string name="notification_running_timer_text">Temps restant: %s</string>
+    <string name="notification_mutliple_running_timers_title">Vos thés infusent</string>
+    <string name="notification_mutliple_running_timers_text">%s : %s</string>
+    <string name="notification_tea_is_done_title">Votre %s est prêt</string>
+    <string name="notification_tea_is_done_text">Bonne degustation !</string>
+    <string name="running_timer_is_done_title">Votre %s est prêt !</string>
+    <string name="recipe_blac_tea">Thé noir</string>
+    <string name="recipe_green_tea">Thé vert</string>
+    <string name="recipe_white_tea">Thé blanc</string>
+    <string name="recipe_oolong">Oolong</string>
+    <string name="recipe_darjeeling">Darjeeling</string>
+    <string name="recipe_puerh">Pu-erh</string>
+    <string name="recipe_tisane">Tisane</string>
+    <string name="recipe_rooibos">Rooibos</string>
+</resources>

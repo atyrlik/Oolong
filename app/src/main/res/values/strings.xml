@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Oolong</string>
+    <string name="tea_intensity_light">Light</string>
+    <string name="tea_intensity_medium">Medium</string>
+    <string name="tea_intensity_strong">Strong</string>
+    <string name="preference_category_display">Display</string>
+    <string name="preference_category_ringtone">Notifications</string>
+    <string name="preference_temperature_unit">Temperature Unit</string>
+    <string name="preference_is_ringtone_enabled">Play alarm when a tea is ready</string>
+    <string name="preference_ringtone">Customize alarm sound</string>
+    <string name="fragment_timers_title">My brews</string>
+    <string name="fragment_settings_title">Settings</string>
+    <string name="running_timer_is_done_title">Your %s is done!</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="notification_channel_running_timers">Timer remaining time</string>
+    <string name="notification_channel_timer_done">Timer done</string>
+    <string name="notification_running_timer_title">Your %s is brewing</string>
+    <string name="notification_running_timer_text">Time left: %s</string>
+    <string name="notification_mutliple_running_timers_title">Your teas are brewing…</string>
+    <string name="notification_mutliple_running_timers_text">%s: %s</string>
+    <string name="notification_tea_is_done_title">Your %s is done</string>
+    <string name="notification_tea_is_done_text">Enjoy!</string>
+    <string name="recipe_blac_tea">Black tea</string>
+    <string name="recipe_green_tea">Green tea</string>
+    <string name="recipe_white_tea">White Tea</string>
+    <string name="recipe_oolong">Oolong</string>
+    <string name="recipe_darjeeling">Darjeeling</string>
+    <string name="recipe_puerh">Pu-erh</string>
+    <string name="recipe_tisane">Tisane</string>
+    <string name="recipe_rooibos">Rooibos</string>
+</resources>
